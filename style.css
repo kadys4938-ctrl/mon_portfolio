@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(160deg,  white, rgb(99, 99, 245));
+    color: #1a1a1a;
+  }
+  
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+  }
+  
+  #lo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px;
+    margin-bottom: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #5fa8ff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0a192f, #112d4e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero h1 span {
+    color: #5fa8ff;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #5fa8ff;
+    color: #0a192f;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: white;
+  }
+  
+  /* SECTIONS */
+  section {
+    padding: 100px 100px;
+    scroll-margin-top: 100px;
+  }
+  
+  .alt {
+    background: #e9f1ff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #0a192f;
+  }
+  
+  /* SKILLS */
+  .skills span {
+    display: inline-block;
+    background: #5fa8ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+  }
+  
+  /* CARDS */
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .im {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* FORM */
+  form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background: #0a192f;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #5fa8ff;
+    color: #0a192f;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  
+    section {
+      padding: 80px 20px;
+      scroll-margin-top: 100px;
+    }
+  }
+  #etudes {
+    padding-bottom: 200px;
+
+  }
+  #apropos {
+    margin-bottom: 200px;
+  }
+  #contact {
+    padding-top: 10px;
+  }
+  #competences {
+    padding-bottom: 300px;
+  }
+  #projets {
+    padding-bottom: 200px;
+  }
